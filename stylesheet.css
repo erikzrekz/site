@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+	height: 100%;
+}
+
+html:after {
+	content: 'May 22, 2020';
+	right: 0px;
+	top: 0px;
+	background-color: white;
+	position: absolute;
+	font-size: 10px;
+}
+
+body > div {
+	max-width: 600px;
+}
+
+body {
+	background-color: #f9d71c;
+	color: black;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	height: 100%;
+	font-family: 'Crimson Text';
+}
+
+body {
+	position: relative;
+}
+
+/*			body:before {
+	content: '';
+	right: 0;
+	top: 20px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2980b9, #6dd5fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+,Opera 12+, Safari 7+ */
+	position: absolute;
+	border: none;
+}
+
+body:after {
+	content: '';
+	right: 0;
+	top: 10px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: none;
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: absolute;
+	box-shadow: grey 10px 10px 20px;
+}*/
+
+a {
+	color: skyblue;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.exp span,
+.edu span {
+	background-color: white;
+}
+
+.exp li:nth-child(1) span {
+	color: red;
+}
+
+.exp li:nth-child(2) span {
+	color: green;
+}
+
+.exp li:nth-child(3) span {
+	color: orange;
+}
+
+.exp li:nth-child(4) span {
+	color: brown;
+}
+
+.edu li:nth-child(1) span {
+	color: blue;
+}
+
+.menu {
+	text-align: right;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
