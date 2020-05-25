@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* RESET */
+
+html,body,blockquote,code,h1,h2,h3,h4,h5,h6,p,pre{margin:0;padding:0}
+button,fieldset,form,input,legend,textarea,select{margin:0;padding:0}
+fieldset{border:0}
+a,a *{cursor:pointer}
+div{margin:0;padding:0;background-color:transparent;text-align:left}
+hr,img{border:0}
+applet,iframe,object{border:0;margin:0;padding:0}
+button,input[type=button],input[type=image],input[type=reset],input[type=submit],label{cursor:pointer;}
+ul,li{list-style:none;margin:0;padding:0;}
+strong{font-weight:bold;}
+em{font-style:italic;} 
+
 html {
 	height: 100%;
 }
@@ -31,34 +45,13 @@ body {
 	position: relative;
 }
 
-/*			body:before {
-	content: '';
-	right: 0;
-	top: 20px;
-	height: 100px;
-	width: 100px;
-	border-radius: 50%;
-	background: #2980b9; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2980b9, #6dd5fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+,Opera 12+, Safari 7+ */
-	position: absolute;
-	border: none;
+h1, h2 {
+	margin-top: 1em;
 }
 
-body:after {
-	content: '';
-	right: 0;
-	top: 10px;
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	border: none;
-	background: #0F2027;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	position: absolute;
-	box-shadow: grey 10px 10px 20px;
-}*/
+p {
+	margin: 12px 0;
+}
 
 a {
 	color: skyblue;
@@ -96,6 +89,10 @@ ul li {
 
 .edu li:nth-child(1) span {
 	color: blue;
+}
+
+.projects p span {
+	background-color: white;
 }
 
 .menu {
