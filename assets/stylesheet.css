@@ -18,15 +18,6 @@ html {
 	height: 100%;
 }
 
-html:after {
-	content: 'May 22, 2020';
-	right: 0px;
-	top: 0px;
-	background-color: white;
-	position: absolute;
-	font-size: 10px;
-}
-
 body > div {
 	max-width: 600px;
 }
