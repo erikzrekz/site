@@ -19,17 +19,21 @@ html {
 }
 
 body > div {
+	min-width: 300px;
 	max-width: 600px;
 }
 
 body {
 	background-color: #f9d71c;
+/*	background-color: #f8f8f8;*/
 	color: black;
 	display: flex;
 	flex-flow: column;
+	justify-content: center;
 	align-items: center;
-	height: 100%;
+	min-height: 100%;
 	font-family: 'Crimson Text';
+	margin: 0 8px;
 }
 
 body {
@@ -38,6 +42,19 @@ body {
 
 h1, h2 {
 	margin-top: 1em;
+}
+
+h3 {
+	margin-top: 1.25em;
+	padding-top: 1em;
+	position: relative;
+}
+
+h3:hover::before {
+	content: '#';
+	position: absolute;
+	left: -10px;
+	top: 1em;
 }
 
 p {
@@ -82,7 +99,8 @@ ul li {
 	color: blue;
 }
 
-.projects p span {
+.projects p span,
+.projects li span {
 	background-color: white;
 }
 
@@ -97,4 +115,104 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.row-column {
+	flex-flow: column wrap;
+}
+
+.row-row {
+	flex-flow: wrap row;
+}
+
+.row-row div:nth-child(1) {
+	width: 60%;
+}
+
+
+.row-column div img {
+	max-width: 100%;
+}
+
+.row-row div img {
+	max-width: 200px;
+}
+
+.browser-wrapper {
+	margin-top: 1em;
+	position: relative;
+    border-right: 1px solid #f8f8f8;
+    border-top-right-radius: 5px;
+    border-left: 1px solid #f8f8f8;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+}
+
+.browser-wrapper img {
+	margin-top: 25px;
+}
+
+.browser-wrapper:before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    top: 0px;
+    left: 0;
+}
+
+.browser-wrapper span {
+	position: absolute;
+	top: 9px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.browser-wrapper span:nth-child(1) {
+	left: 10px;
+	background-color: indianred;
+}
+
+.browser-wrapper span:nth-child(2) {
+	left: 25px;
+	background-color: yellow;
+}
+
+.browser-wrapper span:nth-child(3) {
+	left: 40px;
+	background-color: lawngreen;
+}
+
+.phone-wrapper {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top: 25px solid black;
+	border-left: 8px solid black;
+	border-right: 8px solid black;
+	border-bottom: 50px solid black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.phone-wrapper:after {
+	content: '';
+    position: absolute;
+    left: 45%;
+    width: 25px;
+    height: 25px;
+    background-color: dimgrey;
+    bottom: -37.5px;
+    border-radius: 50%;
 }
