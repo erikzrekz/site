@@ -83,15 +83,17 @@ ul li {
 	color: red;
 }
 
-.exp li:nth-child(2) span {
+.exp li:nth-child(2) span,
+.exp li:nth-child(3) span,
+.exp li:nth-child(4) span {
 	color: green;
 }
 
-.exp li:nth-child(3) span {
+.exp li:nth-child(5) span {
 	color: orange;
 }
 
-.exp li:nth-child(4) span {
+.exp li:nth-child(6) span {
 	color: brown;
 }
 
@@ -215,4 +217,13 @@ a:hover {
     background-color: dimgrey;
     bottom: -37.5px;
     border-radius: 50%;
+}
+
+/* MOBILE SPECIFIC */
+@media (min-width: 320px) and (max-width: 600px) {
+  
+	.row-row div:nth-child(1) {
+		width: 100%;
+	}  
+  
 }
